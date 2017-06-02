@@ -28,4 +28,9 @@ public class Patient extends People {
     public String toString() {
         return "Имя: " + getName() + "; Возраст: " + getAge();
     }
+
+    @Override
+    public void myTest() {
+        System.out.println("Class Patient");
+    }
 }

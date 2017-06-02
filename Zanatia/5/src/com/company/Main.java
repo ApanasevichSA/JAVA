@@ -25,12 +25,14 @@ public class Main {
         st.append(1);
         System.out.println(st);
 
+        //People p = new People("dfg",34);
+        People pBase = new Doctor();
+        colMyTest(doctor);
+        colMyTest(patient);
 
-
-
-
-
-
-
+    }
+    public static void colMyTest(People p){
+        p.myTest();
+        System.out.println(p.getName());
     }
 }

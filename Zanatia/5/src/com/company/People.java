@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * Created by user on 31.05.2017.
  */
-public class People extends Object {
+public abstract class  People extends Object {
     private static int nextID = 345;  // id следующего больного
     public int id;     // id больного
     private String name;  // имя больного
@@ -18,7 +18,7 @@ public class People extends Object {
         nextID++;
     }
 
-    public People(int id, String name, int age) {
+    public People(String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -53,4 +53,6 @@ public class People extends Object {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public abstract void myTest();
 }

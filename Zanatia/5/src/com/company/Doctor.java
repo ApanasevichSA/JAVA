@@ -21,4 +21,9 @@ public class Doctor extends People {
     public void setSpecial(String special) {
         this.special = special;
     }
+
+    @Override
+    public void myTest() {
+        System.out.println("Class Doctor");
+    }
 }
