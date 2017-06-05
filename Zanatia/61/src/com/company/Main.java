@@ -10,6 +10,9 @@ public class Main {
         myArea(new Rectangle(5,6));
         myArea(new Triangle(3,4,5));
 
+        int[] a = new int[]{1,2,3,4,5,6,7,8,9,10};
+        int[] b;
+
     }
 
     public static void myArea(Figura f){
