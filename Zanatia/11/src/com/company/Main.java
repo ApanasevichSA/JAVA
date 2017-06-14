@@ -1,8 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Main {
 
@@ -68,5 +66,23 @@ public class Main {
         listInt.removeAll(infdd);
 
         System.out.println(listInt.toString());
+
+
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("5","пять");
+        hashMap.put("7","семь");
+        hashMap.put("6","шесть");
+        hashMap.put("20","FFFFF");
+        hashMap.put("0","00000");
+        hashMap.put("0","11111");
+
+        System.out.println(hashMap.toString());
+        System.out.println(hashMap.get(0));
+
+        for(String key: hashMap.keySet()){
+            System.out.println("key = " + key + " value = " + hashMap.get(key));
+        }
+
+
     }
 }
