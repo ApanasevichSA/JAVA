@@ -1,12 +1,17 @@
 package com.company;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by user on 19.06.2017.
  */
 public class People {
     private int age;
     private int id;
+
+    @SerializedName("is_Degree")
     private boolean IsDegree;
+
     private String name;
     private String surname;
 
@@ -58,4 +63,14 @@ public class People {
         this.surname = surname;
     }
 
+    @Override
+    public String toString() {
+        return "People{" +
+                "age=" + age +
+                ", id=" + id +
+                ", IsDegree=" + IsDegree +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }

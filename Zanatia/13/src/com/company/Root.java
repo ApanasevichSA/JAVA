@@ -27,6 +27,6 @@ public class Root {
 
     @Override
     public String toString() {
-        return "Name: " + name + "People: " + people;
+        return "Name: " + name + " People: " + people;
     }
 }

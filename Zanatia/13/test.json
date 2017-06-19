@@ -6,42 +6,42 @@
         "name": "Ivan",
         "surname": "Ivanov",
         "age": 12,
-        "isDegree": true
+        "is_Degree": true
       },
       {
         "id": 1,
         "name": "Sergei",
         "surname": "Petrov",
         "age": 20,
-        "isDegree": false
+        "is_Degree": false
       },
 	  {
         "id": 2,
         "name": "Alexei",
         "surname": "Sidorov",
         "age": 42,
-        "isDegree": true
+        "is_Degree": true
       },
       {
         "id": 3,
         "name": "Michael",
         "surname": "Jackson",
         "age": 34,
-        "isDegree": true
+        "is_Degree": true
       },
       {
         "id": 4,
         "name": "Alex",
         "surname": "Lukushenko",
         "age": 235,
-        "isDegree": true
+        "is_Degree": true
       },
       {
         "id": 5,
         "name": "Maksim",
         "surname": "Hsdfkj",
         "age": 21,
-        "isDegree": true
-      },
+        "is_Degree": true
+      }
     ]
 }

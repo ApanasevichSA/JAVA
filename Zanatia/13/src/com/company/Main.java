@@ -1,10 +1,12 @@
 package com.company;
 
+import com.google.gson.Gson;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,7 +17,10 @@ public class Main {
     public static void main(String[] args) throws IOException, ParseException {
 	// write your code here
 
-        Root root = parseJSON("test.json");
+//        Root root = parseJSON("test.json");
+//        System.out.println(root.toString());
+
+        Root root = parseGson("test.json");
         System.out.println(root.toString());
 
     }
@@ -49,6 +54,19 @@ public class Main {
 
         root.setPeople(peopleArray);
 
+        return root;
+    }
+
+    public static Root parseGson(String path){
+        Root root = null;
+        try{
+            BufferedReader reader = new BufferedReader(new FileReader(path));
+
+            Gson gson = new Gson();
+            root = gson.fromJson(reader,Root.class);
+        } catch (Exception e){
+            System.out.println("Ошибка открытия файла " + path);
+        }
         return root;
     }
 
