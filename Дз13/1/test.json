@@ -1,0 +1,47 @@
+{
+  "name": "Test file",
+  "people": [
+      {
+        "id": 0,
+        "name": "Ivan",
+        "surname": "Ivanov",
+        "age": 12,
+        "isDegree": true
+      },
+      {
+        "id": 1,
+        "name": "Sergei",
+        "surname": "Petrov",
+        "age": 20,
+        "isDegree": false
+      },
+	  {
+        "id": 2,
+        "name": "Alexei",
+        "surname": "Sidorov",
+        "age": 42,
+        "isDegree": true
+      },
+      {
+        "id": 3,
+        "name": "Michael",
+        "surname": "Jackson",
+        "age": 34,
+        "isDegree": true
+      },
+      {
+        "id": 4,
+        "name": "Alex",
+        "surname": "Lukushenko",
+        "age": 235,
+        "isDegree": true
+      },
+      {
+        "id": 5,
+        "name": "Maksim",
+        "surname": "Hsdfkj",
+        "age": 21,
+        "isDegree": true
+      }
+    ]
+}
