@@ -1,0 +1,50 @@
+{
+  "bankName": "Super duper bank",
+  "bankLocation": "Minks",
+  "date": "2014-04-25 12:35:00 +0300",
+  "baseCurrencyId": 1,
+  "currency": [
+      {
+        "id": 0,
+        "name": "USD",
+        "code": 786,
+        "rate": 1.1215,
+        "visible": true
+      },
+      {
+        "id": 1,
+        "name": "EUR",
+        "code": 345,
+        "rate": 1,
+        "visible": true
+      },
+	  {
+        "id": 2,
+        "name": "CZK",
+        "code": 633,
+        "rate": 27.430,
+        "visible": true
+      },
+      {
+        "id": 3,
+        "name": "HUF",
+        "code": 987,
+        "rate": 302.81,
+        "visible": true
+      },
+      {
+        "id": 4,
+        "name": "CAD",
+        "code": 567,
+        "rate": 1.3480,
+        "visible": true
+      },
+      {
+        "id": 5,
+        "name": "ILS",
+        "code": 786,
+        "rate": 4.3340,
+        "visible": false
+      }
+    ]
+}
