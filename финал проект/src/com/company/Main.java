@@ -24,7 +24,7 @@ public class Main implements OnConvertListener {
             try {
                 deistvie = reader.readLine();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Ошибка ввода действия");
             }
             if (deistvie.equals("Next")){
                 System.out.println(Manny.nameCurrency);
@@ -87,6 +87,10 @@ public class Main implements OnConvertListener {
             }
             case 4:{
                 System.out.println("Файл не скачен!");
+                break;
+            }
+            case 5:{
+                System.out.println("Файл не открыт!");
                 break;
             }
             default:{

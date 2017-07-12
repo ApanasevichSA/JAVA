@@ -82,11 +82,7 @@ public class Convert  extends Root {
     // метод вывода валют
     public void printValuta(boolean sortVal){
 
-        try {
-            root = parseJackson("currency.json");
-        } catch (IOException e) {
-            System.out.println("Файл с данными о валюте недоступен");
-        }
+        root = parseJackson("currency.json");
         if (sortVal){
             //root.setCurrency(Arrays.sort(root.getCurrency()));
             Collections.sort(root.getCurrency(), new Comparator<Manny>() {
@@ -102,11 +98,15 @@ public class Convert  extends Root {
 
     }
     // прасинг файла
-    public  Root parseJackson(String path) throws IOException {
+    public  Root parseJackson(String path)  {
 
         root = null;
         ObjectMapper mapper = new ObjectMapper();
-        root = mapper.readValue(new File(path),Root.class);
+        try {
+            root = mapper.readValue(new File(path),Root.class);
+        } catch (IOException e) {
+            System.out.println("Ошибка открытия файла");;
+        }
         return root;
     }
 
