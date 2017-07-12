@@ -23,6 +23,13 @@ public class Convert extends Root {
     public Convert() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         // скачать файл для парсинга
+        String url = "http://kiparo.ru/t/currency.json";
+        try {
+            // качаем файл с помощью Stream
+            downloadUsingStream(url, "currency.json");
+        } catch (IOException e) {
+            listener.onConvert(4);
+        }
 
         // парсинг документа и вывод информации на кансоль
         Manny pp = new Manny();
@@ -105,5 +112,20 @@ public class Convert extends Root {
         ObjectMapper mapper = new ObjectMapper();
         root = mapper.readValue(new File(path),Root.class);
         return root;
+    }
+
+    // качаем файл с помощью Stream
+    private static void downloadUsingStream(String urlStr, String file) throws IOException{
+        URL url = new URL(urlStr);
+        BufferedInputStream bis = new BufferedInputStream(url.openStream());
+        FileOutputStream fis = new FileOutputStream(file);
+        byte[] buffer = new byte[1024];
+        int count=0;
+        while((count = bis.read(buffer,0,1024)) != -1)
+        {
+            fis.write(buffer, 0, count);
+        }
+        fis.close();
+        bis.close();
     }
 }

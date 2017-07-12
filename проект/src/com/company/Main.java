@@ -68,6 +68,7 @@ public class Main implements OnConvertListener {
     public void onConvert(int errorCod) {
         // 1 - успешно конвертированно, 2 - нужной валюты нет,
         // 3 -  валюта для перевода есть
+        // 4 - файл не скачен
         switch (errorCod){
             case 1:{
                 System.out.println("Чек распечатан.");
@@ -79,6 +80,10 @@ public class Main implements OnConvertListener {
             }
             case 3:{
                 System.out.println("Валюта для перевода есть!");
+                break;
+            }
+            case 4:{
+                System.out.println("Файл не скачен!");
                 break;
             }
             default:{
